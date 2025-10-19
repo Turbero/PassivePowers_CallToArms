@@ -57,13 +57,13 @@
             <SpecificVersion>false</SpecificVersion>
         </Reference>
         <Reference Include="assembly_guiutils">
-          <HintPath>$(GamePath)\valheim_Data\Managed\publicized_assemblies\assembly_guiutils_publicized.dll</HintPath>
+          <HintPath>..\..\..\Libs\publicized_assemblies\assembly_guiutils_publicized.dll</HintPath>
         </Reference>
-        <Reference Include="assembly_utils, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-            <HintPath>$(GamePath)\valheim_Data\Managed\publicized_assemblies\assembly_utils_publicized.dll</HintPath>
+        <Reference Include="assembly_utils">
+          <HintPath>..\..\..\Libs\publicized_assemblies\assembly_utils_publicized.dll</HintPath>
         </Reference>
-        <Reference Include="assembly_valheim, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-            <HintPath>$(GamePath)\valheim_Data\Managed\publicized_assemblies\assembly_valheim_publicized.dll</HintPath>
+        <Reference Include="assembly_valheim">
+          <HintPath>..\..\..\Libs\publicized_assemblies\assembly_valheim_publicized.dll</HintPath>
         </Reference>
         <Reference Include="BepInEx, Version=5.4.16.0, Culture=neutral, PublicKeyToken=null">
             <HintPath>$(GamePath)\BepInEx\core\BepInEx.dll</HintPath>
@@ -119,6 +119,10 @@
         <Content Include="Libs\ServerSync.dll">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </Content>
+        <Content Include="MODGEN\CHANGELOG.md" />
+        <Content Include="MODGEN\icon.png" />
+        <Content Include="MODGEN\manifest.json" />
+        <Content Include="MODGEN\README.md" />
         <EmbeddedResource Include="translations\English.yml"/>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
